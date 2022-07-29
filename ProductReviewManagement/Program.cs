@@ -42,3 +42,6 @@ productManager.RetrieveRecords(productReview);
 productManager.CountforEachProductID(productReview);
 productManager.RetrieveAndReview(productReview);
 productManager.SkippingRecords(productReview);
+
+Datatable datatable = new Datatable();
+datatable.CreateDataTable();
