@@ -35,3 +35,6 @@ foreach (var product in productReview)
     Console.WriteLine("ProductId: " + product.ProductId + "  UserId: " + product.UserId
                     + "  Rating: " + product.Rating + "  Review: " + product.Review + "  IsLike: " + product.IsLike);
 }
+
+ProductManager productManager = new ProductManager();
+productManager.HighRatingRecords(productReview);
