@@ -40,3 +40,4 @@ ProductManager productManager = new ProductManager();
 productManager.HighRatingRecords(productReview);
 productManager.RetrieveRecords(productReview);
 productManager.CountforEachProductID(productReview);
+productManager.RetrieveAndReview(productReview);
