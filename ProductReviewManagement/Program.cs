@@ -42,6 +42,7 @@ productManager.RetrieveRecords(productReview);
 productManager.CountforEachProductID(productReview);
 productManager.RetrieveAndReview(productReview);
 productManager.SkippingRecords(productReview);
+productManager.AvgRating(productReview);
 
 Datatable datatable = new Datatable();
 datatable.CreateDataTable();
