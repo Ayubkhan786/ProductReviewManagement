@@ -69,6 +69,15 @@ namespace ProductReviewManagement
                 Console.WriteLine("Product Id:{0} => Average Rating :{1}", data.products, data.Count);
             }
         }
+        public void RetrieveRecord(List<ProductReview> productReview)
+        {
+            var records = (from productReviews in productReview where productReviews.Review == "Nice" select productReviews);
+            foreach (var record in records)
+            {
+                Console.WriteLine("Product Id: " + record.ProductId + "  Reeview: " + record.Review);
+            }
+
+        }
     }
 }
 
