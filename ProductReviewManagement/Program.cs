@@ -38,3 +38,4 @@ foreach (var product in productReview)
 
 ProductManager productManager = new ProductManager();
 productManager.HighRatingRecords(productReview);
+productManager.RetrieveRecords(productReview);

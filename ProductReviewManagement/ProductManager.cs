@@ -22,5 +22,19 @@ namespace ProductReviewManagement
                                 + "  Rating: " + data.Rating + "  Review: " + data.Review + "  IsLike: " + data.IsLike);
             }
         }
+        public void RetrieveRecords(List<ProductReview> productReview)
+        {
+            var recordData = from productReviews in productReview
+                             where (productReviews.ProductId == 1 && productReviews.Rating > 3)
+                             || (productReviews.ProductId == 4 && productReviews.Rating > 3)
+                             || (productReviews.ProductId == 9 && productReviews.Rating > 3)
+                             select productReviews;
+            foreach (var data in recordData)
+            {
+                Console.WriteLine("ProductId: " + data.ProductId + "  UserId: " + data.UserId
+                                + "  Rating: " + data.Rating + "  Review: " + data.Review + "  IsLike: " + data.IsLike);
+            }
+        }
     }
+
 }
