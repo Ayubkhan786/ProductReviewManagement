@@ -41,3 +41,4 @@ productManager.HighRatingRecords(productReview);
 productManager.RetrieveRecords(productReview);
 productManager.CountforEachProductID(productReview);
 productManager.RetrieveAndReview(productReview);
+productManager.SkippingRecords(productReview);
